@@ -1,0 +1,8 @@
+{
+  "name": "Workout Timer",
+  "short_name": "Workout",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0e0e11",
+  "theme_color": "#0e0e11"
+}
