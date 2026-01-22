@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  background: #0e0e11;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.app {
+  max-width: 420px;
+  margin: auto;
+  padding: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background: #1f80ff;
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+
+.timer {
+  background: #15151a;
+  border-radius: 18px;
+  padding: 24px;
+  text-align: center;
+  margin: 16px 0;
+}
+
+.timer h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.controls button {
+  margin: 8px;
+}
+
+.card {
+  background: #15151a;
+  border-radius: 18px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.mobility {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
