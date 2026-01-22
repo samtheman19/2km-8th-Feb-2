@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workout Timer</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#0e0e11" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Workout">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- HEADER (WorkoutHeader.js) -->
+    <header>
+      <div>
+        <h2>Sat – Tempo / Steady</h2>
+        <p>Mode: Treadmill</p>
+      </div>
+      <button id="resetWeek">Reset Week</button>
+    </header>
+
+    <!-- TIMER (Timer.js) -->
+    <section class="timer">
+      <h1 id="time">00:00:00</h1>
+      <div class="controls">
+        <button id="startPause">Start</button>
+        <button id="reset">End (Save)</button>
+      </div>
+    </section>
+
+    <!-- WORKOUT DETAILS (WorkoutDetails.js) -->
+    <section class="card">
+      <h3>Warm-up</h3>
+      <ul>
+        <li>10 min easy</li>
+        <li>3 × 20s strides</li>
+      </ul>
+
+      <h3>Tempo / Steady</h3>
+      <ul>
+        <li>Incline: 1.0%</li>
+        <li>10 min easy @ 11–12 km/h</li>
+        <li>10–15 min steady @ 13–14 km/h</li>
+        <li>5 min easy cool down</li>
+      </ul>
+    </section>
+
+    <!-- MOBILITY (Mobility.js) -->
+    <section class="card">
+      <h3>Mobility</h3>
+      <div class="mobility">
+        <span>Glute stretch (per side)</span>
+        <span>01:00</span>
+        <button>▶</button>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
+
+</body>
+</html>
